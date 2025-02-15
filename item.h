@@ -1,5 +1,7 @@
 #include <string>
 using namespace std;
+#ifndef ITEM_H
+#define ITEM_H
 
 class Item
 {
@@ -10,3 +12,5 @@ class Item
         string name;
         string description;
 };
+
+#endif

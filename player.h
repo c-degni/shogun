@@ -1,4 +1,6 @@
 #include "character.h"
+#include "weapon.h"
+#include "armor.h"
 using namespace std;
 
 #define MAX_INVENTORY_SLOTS 4
@@ -6,12 +8,12 @@ using namespace std;
 class Player : Character
 {
     public:
-        Player(string name);
+        Player(string n);
 
         string name;
         Weapon weapon;
-        Item inventory[MAX_INVENTORY_SLOTS];
         Armor chestplate;
+        Item inventory[MAX_INVENTORY_SLOTS];
 
         int getMaxHealth();
         void setMaxHealth(int h);

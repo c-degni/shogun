@@ -1,6 +1,8 @@
 #include <vector>
 #include "item.h"
 using namespace std;
+#ifndef CHARACTER_H
+#define CHARACTER_H
 
 class Character
 {
@@ -19,3 +21,5 @@ class Character
         int currentHealth;
         int attack;
 };
+
+#endif
