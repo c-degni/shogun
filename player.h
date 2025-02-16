@@ -8,16 +8,19 @@ using namespace std;
 class Player : Character
 {
     public:
+        Player();
         Player(string n);
 
         string name;
         Weapon weapon;
         Armor chestplate;
-        Item inventory[MAX_INVENTORY_SLOTS];
-
+        
+        void addItemToInventory(Item item);
         int getMaxHealth();
         void setMaxHealth(int h);
+        void displayInventory();
 
     private:
         int maxHealth;
+        Item inventory[MAX_INVENTORY_SLOTS];
 };

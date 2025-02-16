@@ -16,6 +16,7 @@ class Character
         void setCurrentHealth(int h);
         int getAttackStat();
         void setAttackStat(int a);
+        bool isDead();
 
     private:
         int currentHealth;

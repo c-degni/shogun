@@ -29,3 +29,8 @@ void Character::setAttackStat(int a)
 {
     attack = a;
 }
+
+bool Character::isDead()
+{
+    return currentHealth <= 0;
+}
