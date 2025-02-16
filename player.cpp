@@ -1,4 +1,5 @@
 #include "player.h"
+#include <iostream>
 using namespace std;
 
 Player::Player(){}
@@ -38,7 +39,7 @@ void Player::addItemToInventory(Item item)
                 if(inventory[slot].name == itemToReplace)
                 {
                     cout << inventory[slot].name << " has been replaced with " << itemToReplace << endl;
-                    inventory[slot].name = item;
+                    inventory[slot].name = itemToReplace;
                     return;
                 }
             }
@@ -47,7 +48,7 @@ void Player::addItemToInventory(Item item)
         }
         else if(input == 'n')
         {
-            cout << "No items will be added to your inventory." endl;
+            cout << "No items will be added to your inventory." << endl;
             cout << "Your inventory is still at max capacity." << endl;
             return; 
         }

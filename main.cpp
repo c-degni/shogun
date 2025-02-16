@@ -10,7 +10,7 @@ int main(void)
 
     cout << "Hello this works for now, on vscode." << endl; // works alone
     cout << "Class files connected." << endl;
-    cout << user.name << "has joined the game." << endl;
+    cout << user.name << " has joined the game." << endl;
 
     return 0;
 }

@@ -7,7 +7,7 @@ Character::Character(string n, int health, int atk)
 {
     name = n;
     currentHealth = health;
-    attack = atk
+    attack = atk;
 }
 
 int Character::getCurrentHealth()

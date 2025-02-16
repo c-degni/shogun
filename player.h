@@ -22,5 +22,5 @@ class Player : Character
 
     private:
         int maxHealth;
-        Item inventory[MAX_INVENTORY_SLOTS];
+        vector<Item> inventory;
 };
