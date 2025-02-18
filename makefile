@@ -1,3 +1,4 @@
+# This file is now unnecessary but a good template to keep for the future
 CXXFLAGS += -MMD  # Generate .d files (contain header dependencies)
 -include $(SRC:.cpp=.d)  # Include generated .d files
 

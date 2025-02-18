@@ -6,7 +6,7 @@ using namespace std;
 
 int main(void) 
 {
-    Player user("Himothy");
+    Player user("Himothy GG");
 
     cout << "Hello this works for now, on vscode." << endl; // works alone
     cout << "Class files connected." << endl;
